@@ -1,0 +1,46 @@
+---
+title: "Using tidyverse with the Bergenbysykkel  data"
+author: "Richard J. Telford"
+date: "May 15, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Dataset 03.csv is the data on the hire of Bergenbysykkel in March 2019 from [https://bergenbysykkel.no/en/open-data/historical](https://bergenbysykkel.no/en/open-data/historical), showing the start and end times and location of each time a bicycle was hired.
+
+## 1 Import the data
+
+Import the data with `read_csv` and examine it.
+
+## 2 Explore the data
+Use tidyverse and make plots when useful
+You will probably need to use `group_by`, `count`, `summarise`, `mutate`, `slice` and `ggplot`.
+
+ - Which is the most popular starting station?
+ - Plot the number of hires and returns from each station
+ - Which is the most popular pair of start and end stations?
+ - What was the longest/shortest duration of hire? 
+ - Plot the distribution of hire duration.
+ - What is the median duration of hire from each station?
+ - Map this information
+ - Are there any significant differences in duration between stations.
+ - How far does a typical cyclist travel?
+ - What is the relationship between distance travelled and time taken?
+ - How fast was the fastest cyclist (for simplicity assume a straight line of travel)
+ 
+## Day and time
+
+With help from the `lubridate` package
+ - How does the number of hires vary throughout the day and week?
+ - How does the average speed vary through the day?
+ - Are some stations more popular at different times of day for hire and return?
+ 
+## Other analyses ... 
+ 
+Do something informative with these data. 
+
+Packages to try `gganimate`,`ggrepel`, `ggmaps` (`get_stamenmap` will work without a google license)
+ 
